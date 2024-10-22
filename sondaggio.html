@@ -8,8 +8,26 @@
 </head>
 
 <body>
-    <form action="">
-
+    <form action="risultati.php" method="get">
+        <p>Inserisci il tuo nome:</p>
+        <input type="text" name="name">
+        <p>Inserisci il tuo cognome:</p>
+        <input type="text" name="surname">
+        <p>Inserisci la tua data di nascita:</p>
+        <input type="date" name="date">
+        <p>Inserisci il tuo orario di arrivo a casa nel giorno più lungo:</p>
+        <input type="time" name="time">
+        <p>Scegli il metodo con cui vieni a scuola:</p>
+        <input type="radio" name="transport" value="piedi"> A piedi
+        <input type="radio" name="transport" value="mezziPubblici"> Mezzi Pubblici
+        <input type="radio" name="transport" value="auto"> Auto
+        <p>Scegli il corso pomeridiano che segui a scuola:</p>
+        <input type="checkbox" name="corso1" value="inglese"> Corso di inglese
+        <input type="checkbox" name="corso2" value="teatro"> Corso di teatro
+        <input type="checkbox" name="corso3" value="sport"> Attività sportive
+        <br>
+        <br>
+        <input type="submit">
     </form>
 </body>
 

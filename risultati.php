@@ -7,6 +7,23 @@
 </head>
 <body>
     <?php
+    $name = $_GET["name"];
+    $surname = $_GET["surname"];
+    $date = $_GET["date"];
+    $time = $_GET["time"];
+    $transport = $_GET["transport"];
+    $listCorsi = array();
+    $c1 = $_GET["corso1"];
+    $c2 = $_GET["corso2"];
+    $c3 = $_GET["corso3"];
+    
+
+    function controllCorsi($c, $lc, $i){
+        if (isset($c)) {
+            $lc[$i] = $c;
+        }
+        return $lc;
+    }
     ?>
 </body>
 </html>
